@@ -1,0 +1,136 @@
+/* @font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color:#4070f4;
+    --text-clr:rgb(172, 172, 172);
+    --font-clr:#fff;
+}
+body{
+    background: var(--main-color);
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.login-form{
+    width: 450px;
+    background: var(--font-clr);
+    height: auto;
+    padding: 10px 35px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+}
+.login-form h1{
+    font-size: 35px;
+    margin-top: 20px;
+    position: relative;
+}
+.login-form h1:before{
+    content: "";
+    position: absolute;
+    top:  100%;
+    left: 0;
+    width: 45px;
+    border-radius: 25px;
+    height: 4px;
+    background: var(--main-color);
+}
+form .Input-feild{
+    margin-top: 30px;
+    position: relative;
+}
+.Input-feild input{
+    width: 100%;
+    height: 40px;
+    padding: 25px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--text-clr);
+    transition: all 0.3s ease;
+    background: transparent;
+    
+}
+.Input-feild input:is(:focus , :valid){
+    border-bottom: 3px solid var(--main-color);
+}
+::placeholder{
+    color: var(--text-clr);
+}
+.Input-feild i{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 18px;
+    color: var(--text-clr);
+    transition: all 0.2s ease;
+}
+.Input-feild .fa-sharp{
+    left: 93%;
+}
+.Input-feild input:is(:focus , :valid) ~ i{
+    color: var(--main-color);
+}
+.Checkbox-text{
+    margin-top: 30px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.Checkbox-text .checkbox{
+    padding: 10px;
+}
+.checkbox input{
+    accent-color: var(--main-color);
+    margin-right: 6px;
+}
+.checkbox .text{
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+}
+.Checkbox-text a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+}
+form .button{
+    margin-top: 30px;
+}
+form .button input{
+   padding: 0px 20px 0px 20px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--font-clr);
+    letter-spacing: 1px ;
+    border-radius: 6px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: #265df2;
+}
+form .Sign-up{
+    margin-top: 30px;
+    text-align: center;
+}
+.Sign-up .text{
+    margin-right: 5px;
+    font-weight: 500;
+    color:#333;
+    font-size: 17px;
+}
+.Sign-up a{
+    font-size: 17px;
+}
